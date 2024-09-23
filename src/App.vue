@@ -1,15 +1,30 @@
 <template>
-  <NavBar />
-  <router-view />
+  <div id="app">
+    <NavBar />
+    <HomeSection id="home" />
+    <AboutSection id="about" />
+    <ServicesSection id="services" />
+    <router-view />
+  </div>
 </template>
 
 <script>
+import AboutSection from "./components/AboutSection.vue";
+import HomeSection from "./components/HomeSection.vue";
+import ServicesSection from "./components/ServicesSection.vue";
 import NavBar from "./components/NavBar.vue";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default {
   name: "App",
   components: {
     NavBar,
+    HomeSection,
+    AboutSection,
+    ServicesSection,
+  },
+  mounted() {
+    AOS.init();
   },
 };
 </script>
@@ -31,18 +46,9 @@ body {
   color: #f5f5f5;
   background-color: #121212;
   line-height: 1.6;
+  width: 100%;
 }
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #24bacb;
+.content {
+  padding-top: 108px;
 }
 </style>

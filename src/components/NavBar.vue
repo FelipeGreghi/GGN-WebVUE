@@ -8,19 +8,13 @@
     <!-- Links de navegação -->
     <ul class="navbar-links">
       <li>
-        <a href="#">Products</a>
+        <a @click="handleClick($event, 'home')">Home</a>
       </li>
       <li>
-        <a href="#">Solutions</a>
+        <a @click="handleClick($event, 'about')">About Us</a>
       </li>
       <li>
-        <a href="#">Developers</a>
-      </li>
-      <li>
-        <a href="#">Resources</a>
-      </li>
-      <li>
-        <a href="#">Pricing</a>
+        <a @click="handleClick($event, 'services')">Services</a>
       </li>
     </ul>
 
@@ -36,6 +30,24 @@
   <script>
 export default {
   name: "NavBar",
+  methods: {
+    handleClick(event, sectionId) {
+      event.preventDefault();
+      this.scrollToSection(sectionId);
+    },
+    scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      const navbar = document.querySelector(".navbar");
+      if (section && navbar) {
+        const navbarHeight = navbar.offsetHeight;
+        const sectionPosition = section.offsetTop - navbarHeight;
+        window.scrollTo({
+          top: sectionPosition,
+          behavior: "smooth",
+        });
+      }
+    },
+  },
 };
 </script>
   
@@ -48,6 +60,10 @@ export default {
   padding: 10px 20px;
   background-color: #1e1e1e;
   border-bottom: 1px solid #444;
+  position: fixed; /* Adicionado para fixar a navbar */
+  top: 0; /* Adicionado para fixar no topo */
+  width: 100%; /* Adicionado para ocupar toda a largura */
+  z-index: 1000; /* Adicionado para garantir que a navbar fique acima de outros elementos */
 }
 
 /* Logo */
@@ -69,6 +85,7 @@ export default {
   color: #fff;
   font-weight: 600;
   font-size: large;
+  cursor: pointer;
 }
 
 .navbar-links li a:hover {
@@ -86,7 +103,7 @@ export default {
 
 .btn {
   padding: 16px 30px;
-  border-radius: 10px;
+  border-radius: 5px;
   text-decoration: none;
   font-weight: 600;
 }
