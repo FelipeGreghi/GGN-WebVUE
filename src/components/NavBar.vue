@@ -2,7 +2,7 @@
   <nav class="navbar">
     <!-- Logo -->
     <div class="navbar-logo">
-      <img src="@/assets/Logo.png" alt="Nylas Logo" />
+      <img src="@/assets/logo.png" alt="Nylas Logo" />
     </div>
 
     <i class="fa-solid fa-bars" @click="toggleMenu"></i>
