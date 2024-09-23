@@ -5,7 +5,7 @@
     <div class="service-container">
       <div
         class="service-card financial-planning"
-        data-aos="fade-right"
+        data-aos="fade-down"
         data-aos-duration="1500"
       >
         <i class="fas fa-chart-line"></i>
@@ -29,7 +29,7 @@
       </div>
       <div
         class="service-card tax-planning"
-        data-aos="fade-left"
+        data-aos="fade-down"
         data-aos-duration="1500"
       >
         <i class="fas fa-file-alt"></i>
@@ -39,10 +39,6 @@
           means you will get the right solution, please find our service.
         </p>
       </div>
-    </div>
-    <div class="decorators">
-      <div class="dots dots-left"></div>
-      <div class="dots dots-right"></div>
     </div>
   </div>
 </template>
@@ -67,6 +63,7 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 0 5%;
 }
 
 h2 {
@@ -81,6 +78,7 @@ h2 {
   gap: 16px;
   max-width: 90%;
   margin-bottom: 16px;
+  box-sizing: border-box;
 }
 
 .service-card {
@@ -176,6 +174,37 @@ h2 {
 
   .service-card p {
     font-size: 0.9rem;
+  }
+}
+@media (max-width: 480px) {
+  .service-container {
+    gap: 5px;
+  }
+
+  .separator {
+    margin-top: 20px;
+  }
+
+  .service-card {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+
+  .service {
+    margin-bottom: 15px;
+    padding: 10% 5%;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .service-card h3 {
+    font-size: 0.9rem;
+  }
+
+  .service-card p {
+    font-size: 0.8rem;
   }
 }
 </style>
