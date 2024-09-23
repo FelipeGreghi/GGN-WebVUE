@@ -29,8 +29,9 @@ export default {
 .welcome-section {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-left: 10%;
-  height: calc(100vh - 108px);
+  min-height: calc(100vh - 78px);
 }
 
 .content {
@@ -74,6 +75,9 @@ p {
 }
 
 .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 40%;
   height: 100%;
 }
@@ -81,6 +85,39 @@ p {
 img {
   max-width: 100%;
   max-height: 100%;
+}
+
+@media (max-width: 1150px) {
+  .welcome-section {
+    padding: 5% 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0;
+    height: auto;
+  }
+
+  .content {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .content {
+    padding-top: 1rem;
+    margin-top: 2rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .image-container {
+    display: none;
+  }
 }
 </style>
   

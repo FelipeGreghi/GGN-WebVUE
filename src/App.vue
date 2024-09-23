@@ -1,10 +1,12 @@
 <template>
   <div id="app">
     <NavBar />
-    <HomeSection id="home" />
-    <AboutSection id="about" />
-    <ServicesSection id="services" />
-    <router-view />
+    <div class="content">
+      <HomeSection id="home" />
+      <AboutSection id="about" />
+      <ServicesSection id="services" />
+      <router-view />
+    </div>
   </div>
 </template>
 
@@ -49,6 +51,6 @@ body {
   width: 100%;
 }
 .content {
-  padding-top: 108px;
+  padding-top: 79px;
 }
 </style>

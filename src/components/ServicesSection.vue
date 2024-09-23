@@ -61,7 +61,8 @@ export default {
 }
 .services {
   text-align: center;
-  height: calc(100vh - 108px);
+  min-height: calc(100vh - 78px);
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,8 +76,11 @@ h2 {
 
 .service-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 16px;
+  max-width: 90%;
+  margin-bottom: 16px;
 }
 
 .service-card {
@@ -85,12 +89,12 @@ h2 {
   border-radius: 10px;
   width: 300px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
   font-size: 1.1rem;
 }
 
 .service-card:hover {
-  transform: translateY(-15px);
+  transform: translateY(15px) !important;
+  transition: transform 0.5s ease-in-out !important;
 }
 
 .service-card h3 {
@@ -137,6 +141,42 @@ h2 {
 .tax-planning i {
   font-size: 2rem;
   margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .service-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .separator {
+    margin-top: 30px;
+  }
+
+  .service-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .service {
+    margin-bottom: 20px;
+    padding: 5% 5%;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .service-card h3 {
+    font-size: 1rem;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+  }
 }
 </style>
   
