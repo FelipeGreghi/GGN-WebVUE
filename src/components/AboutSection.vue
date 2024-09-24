@@ -1,17 +1,17 @@
 <template>
   <section class="welcome-section">
     <div class="content" data-aos="fade-up" data-aos-duration="1500">
-      <h1>Welcome To Ingoude Company</h1>
+      <h1>Bem-vindo à GGN</h1>
       <p>
-        We are Ingoude Company, we are involved in financial advisory business.
-        Our company has been moving towards 8 years, but that doesn't make us a
-        barrier to success because we learn from the right people.
+        Na nossa empresa, somos especialistas em transformar dados em soluções poderosas e visuais. Com 3 anos de experiência no mercado, ajudamos empresas a automatizar processos, criar dashboards dinâmicos e responsivos, e desenvolver interfaces web intuitivas e eficazes.
+       </p>
+      <p>
+        Nosso foco é entregar resultados que realmente fazem a diferença, simplificando operações e fornecendo insights visuais claros para que você possa tomar decisões informadas e rápidas. Seja para otimizar fluxos de trabalho ou dar vida a seus dados com dashboards multiplataforma, nossa equipe está pronta para superar expectativas.
       </p>
       <p>
-        Talking about business, we provide an opportunity to consult with us to
-        provide a better future for the company.
+        Veja nosso portfólio e descubra como podemos transformar seus desafios em oportunidades com soluções inovadoras e sob medida para o seu negócio.
       </p>
-      <button class="btn">Know More</button>
+      <button class="btn">Nosso Portfólio</button>
     </div>
     <div class="image-container" data-aos="fade" data-aos-duration="1500">
       <img src="@/assets/AboutImage.png" />
@@ -36,7 +36,7 @@ export default {
 
 .content {
   padding-top: 2rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
   max-width: 50%;
   display: flex;
   flex-direction: column;
@@ -52,7 +52,7 @@ h1 {
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1rem;
   color: white;
   margin-bottom: 1rem;
   text-align: left;
@@ -112,7 +112,7 @@ img {
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .image-container {

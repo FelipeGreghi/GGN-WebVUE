@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
     <!-- Logo -->
-    <div class="navbar-logo">
+    <div class="navbar-logo" @click="handleClick($event, 'home')">
       <img src="@/assets/logo.png" alt="Nylas Logo" />
     </div>
 
@@ -80,6 +80,7 @@ export default {
 /* Logo */
 .navbar-logo img {
   height: 50px;
+  cursor: pointer;
 }
 
 /* Links de navegação */
@@ -163,6 +164,10 @@ export default {
 
   .navbar-actions {
     display: none;
+  }
+
+  .navbar-logo img {
+    height: 35px;
   }
 }
 </style>

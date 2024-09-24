@@ -157,6 +157,7 @@ h2 {
   .service-card {
     width: 80%;
     margin-bottom: 20px;
+    height: 200px;
   }
 
   .service {
