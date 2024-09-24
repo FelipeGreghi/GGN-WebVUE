@@ -77,10 +77,15 @@ export default {
   z-index: 1000;
 }
 
-/* Logo */
-.navbar-logo img {
-  height: 50px;
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+}
+
+.navbar-logo img {
+  height: 40px;
 }
 
 /* Links de navegação */
@@ -146,7 +151,7 @@ export default {
     gap: 1em;
     background-color: #1e1e1e;
     position: absolute;
-    top: 60px;
+    top: 51px;
     right: 0;
     width: 100%;
     padding: 1em;
@@ -167,7 +172,7 @@ export default {
   }
 
   .navbar-logo img {
-    height: 35px;
+    height: 30px;
   }
 }
 </style>

@@ -31,7 +31,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   margin-left: 10%;
-  min-height: calc(100vh - 78px);
+  min-height: calc(100vh - 51px);
 }
 
 .content {

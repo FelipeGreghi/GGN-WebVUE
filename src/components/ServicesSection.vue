@@ -57,7 +57,7 @@ export default {
 }
 .services {
   text-align: center;
-  min-height: calc(100vh - 78px);
+  min-height: calc(100vh - 51px);
   height: 100%;
   display: flex;
   justify-content: center;
