@@ -14,9 +14,11 @@
         </p>
         <div class="buttons" data-aos="fade" data-aos-duration="1500">
           <button class="learn-more" @click="handleClick($event, 'about')">
-            Learn More
+            Saiba Mais
           </button>
-          <button class="contact">Contact</button>
+          <button class="contact" @click="handleClick($event, 'contact')">
+            Contato
+          </button>
         </div>
       </div>
     </div>
@@ -107,6 +109,10 @@ p {
 
 .contact:hover {
   background-color: #3d7177;
+}
+
+.learn-more:hover {
+  background-color: #dfdfdf;
 }
 
 @media (max-width: 768px) {

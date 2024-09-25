@@ -58,7 +58,7 @@ export default {
 .card-description {
   font-size: 14px;
   color: #333;
-  text-align: left;
+  font-weight: 500;
 }
 </style>
   

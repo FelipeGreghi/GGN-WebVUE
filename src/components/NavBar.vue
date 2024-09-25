@@ -2,7 +2,7 @@
   <nav class="navbar">
     <!-- Logo -->
     <div class="navbar-logo" @click="handleClick($event, 'home')">
-      <img src="@/assets/logo.png" alt="Nylas Logo" />
+      <img src="@/assets/logo.png" />
     </div>
 
     <i class="fa-solid fa-bars" @click="toggleMenu"></i>
@@ -24,7 +24,9 @@
     <!-- Ações à direita -->
     <ul class="navbar-actions">
       <li>
-        <a href="#" class="btn primary-btn">Contact Sales</a>
+        <a class="btn primary-btn" @click="handleClick($event, 'contact')"
+          >Contato</a
+        >
       </li>
     </ul>
   </nav>
@@ -122,19 +124,20 @@ export default {
 }
 
 .btn {
-  padding: 16px 30px;
-  border-radius: 5px;
   text-decoration: none;
-  font-weight: 600;
-}
-
-.primary-btn {
-  background-color: #24bacb;
-  color: white;
-}
-
-.primary-btn:hover {
-  background-color: #3d7177;
+  font-weight: 800;
+  color: #24bacb;
+  border: 3px solid #24bacb;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  font-size: 1em;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .fa-bars {

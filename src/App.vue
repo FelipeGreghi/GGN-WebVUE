@@ -7,6 +7,7 @@
       <ServicesSection id="services" />
       <PortfolioSection id="portfolio" />
       <router-view />
+      <Footer id="contact" />
     </div>
   </div>
 </template>
@@ -17,6 +18,7 @@ import HomeSection from "./components/HomeSection.vue";
 import ServicesSection from "./components/ServicesSection.vue";
 import PortfolioSection from "./components/PortfolioSection.vue";
 import NavBar from "./components/NavBar.vue";
+import Footer from "./components/Footer.vue";
 import AOS from "aos";
 import "aos/dist/aos.css";
 export default {
@@ -27,6 +29,7 @@ export default {
     AboutSection,
     ServicesSection,
     PortfolioSection,
+    Footer,
   },
   mounted() {
     AOS.init();
