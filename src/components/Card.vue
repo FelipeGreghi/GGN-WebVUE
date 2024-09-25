@@ -35,14 +35,20 @@ export default {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: center;
-  height: 350px;
-  width: 250px;
+  height: 400px;
+  width: 300px;
   padding: 16px;
+  margin-bottom: 40px;
+  cursor: pointer;
 }
+.card:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
 .card-image {
   width: 100%;
   height: 150px;
-  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 .card-title {
   font-size: 18px;
@@ -52,6 +58,7 @@ export default {
 .card-description {
   font-size: 14px;
   color: #333;
+  text-align: left;
 }
 </style>
   

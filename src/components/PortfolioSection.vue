@@ -30,14 +30,16 @@ export default {
     return {
       projects: [
         {
-          title: "Projeto 1",
-          image: "https://picsum.photos/200/300",
-          description: "Descrição do Projeto 1",
+          title: "Portfólio Web",
+          image: require("@/assets/portfolio/portfolioWebProgramador.jpg"),
+          description:
+            "Desenvolvimento de um portfólio web responsivo com Vue.js, projetado para exibir de forma interativa as habilidades de um desenvolvedor full stack, projetos completos com links para repositórios, além de facilitar o contato para oportunidades profissionais.",
         },
         {
-          title: "Projeto 2",
-          image: "https://picsum.photos/200/300",
-          description: "Descrição do Projeto 2",
+          title: "DashBoard Telefonia",
+          image: require("@/assets/portfolio/portfolioDashTelefoniaRWR.jpg"),
+          description:
+            "Desenvolvimento de uma aplicação web interativa usando Streamlit, focada em visualização e análise de dados de Redes de Recomendação, permitindo a criação de dashboards dinâmicos e relatórios automatizados para facilitar a interpretação dos resultados.",
         },
         // Adicione mais projetos conforme necessário
       ],
@@ -71,7 +73,6 @@ export default {
 .subtitle {
   font-size: 1.5rem;
   color: #333;
-  margin-bottom: 1.5rem;
 }
 
 .portfolio-projects {
