@@ -49,7 +49,7 @@ export default {
   
 <style scoped>
 .homepage {
-  min-height: calc(100vh - 51px);
+  min-height: calc(100vh - 60px);
   padding: 0 10%;
   box-sizing: border-box;
   display: flex;

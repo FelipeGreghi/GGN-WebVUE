@@ -3,15 +3,26 @@
     <div class="content" data-aos="fade-up" data-aos-duration="1500">
       <h1>Bem-vindo à GGN</h1>
       <p>
-        Na nossa empresa, somos especialistas em transformar dados em soluções poderosas e visuais. Com 3 anos de experiência no mercado, ajudamos empresas a automatizar processos, criar dashboards dinâmicos e responsivos, e desenvolver interfaces web intuitivas e eficazes.
-       </p>
-      <p>
-        Nosso foco é entregar resultados que realmente fazem a diferença, simplificando operações e fornecendo insights visuais claros para que você possa tomar decisões informadas e rápidas. Seja para otimizar fluxos de trabalho ou dar vida a seus dados com dashboards multiplataforma, nossa equipe está pronta para superar expectativas.
+        Na nossa empresa, somos especialistas em transformar dados em soluções
+        poderosas e visuais. Com 3 anos de experiência no mercado, ajudamos
+        empresas a automatizar processos, criar dashboards dinâmicos e
+        responsivos, e desenvolver interfaces web intuitivas e eficazes.
       </p>
       <p>
-        Veja nosso portfólio e descubra como podemos transformar seus desafios em oportunidades com soluções inovadoras e sob medida para o seu negócio.
+        Nosso foco é entregar resultados que realmente fazem a diferença,
+        simplificando operações e fornecendo insights visuais claros para que
+        você possa tomar decisões informadas e rápidas. Seja para otimizar
+        fluxos de trabalho ou dar vida a seus dados com dashboards
+        multiplataforma, nossa equipe está pronta para superar expectativas.
       </p>
-      <button class="btn">Nosso Portfólio</button>
+      <p>
+        Veja nosso portfólio e descubra como podemos transformar seus desafios
+        em oportunidades com soluções inovadoras e sob medida para o seu
+        negócio.
+      </p>
+      <button class="btn" @click="handleClick($event, 'portfolio')">
+        Nosso Portfólio
+      </button>
     </div>
     <div class="image-container" data-aos="fade" data-aos-duration="1500">
       <img src="@/assets/AboutImage.png" />
@@ -22,6 +33,24 @@
   <script>
 export default {
   name: "WelcomeSection",
+  methods: {
+    handleClick(event, sectionId) {
+      event.preventDefault();
+      this.scrollToSection(sectionId);
+    },
+    scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      const navbar = document.querySelector(".navbar");
+      if (section && navbar) {
+        const navbarHeight = navbar.offsetHeight;
+        const sectionPosition = section.offsetTop - navbarHeight;
+        window.scrollTo({
+          top: sectionPosition,
+          behavior: "smooth",
+        });
+      }
+    },
+  },
 };
 </script>
   
@@ -31,7 +60,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   margin-left: 10%;
-  min-height: calc(100vh - 51px);
+  min-height: calc(100vh - 60px);
 }
 
 .content {
@@ -87,7 +116,7 @@ img {
   max-height: 100%;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1250px) {
   .welcome-section {
     padding: 5% 5%;
     display: flex;

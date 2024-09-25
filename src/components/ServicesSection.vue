@@ -1,42 +1,45 @@
 <template>
   <div class="services">
     <div class="separator" data-aos="fade" data-aos-duration="1500"></div>
-    <h2 data-aos="fade" data-aos-duration="1500">Our Service</h2>
+    <h2 data-aos="fade" data-aos-duration="1500">Nossos Serviços</h2>
     <div class="service-container">
       <div
-        class="service-card financial-planning"
+        class="service-card web-desing"
         data-aos="fade-down"
         data-aos-duration="1500"
       >
-        <i class="fas fa-chart-line"></i>
-        <h3>Financial Planning</h3>
+        <i class="fas fa-paint-brush"></i>
+        <h3>Web Design</h3>
         <p>
-          We are specialists in this field with over 100 experiments. What it
-          means you will get the right solution, please find our service.
+          Criamos interfaces web intuitivas e eficazes, focadas em proporcionar
+          uma experiência de usuário agradável, com design moderno e compatível
+          com todas as plataformas.
         </p>
       </div>
       <div
-        class="service-card insurance"
+        class="service-card automacao"
         data-aos="fade-up"
         data-aos-duration="1500"
       >
-        <i class="fas fa-shield-alt"></i>
-        <h3>Insurance</h3>
+        <i class="fas fa-cogs"></i>
+        <h3>Automação de Dados</h3>
         <p>
-          We are specialists in this field with over 100 experiments. What it
-          means you will get the right solution, please find our service.
+          Nossa equipe é especialista em automatizar processos complexos,
+          otimizando fluxos de trabalho e integrando diversas plataformas para
+          garantir que seus dados estejam sempre atualizados e prontos para uso.
         </p>
       </div>
       <div
-        class="service-card tax-planning"
+        class="service-card dashboard"
         data-aos="fade-down"
         data-aos-duration="1500"
       >
-        <i class="fas fa-file-alt"></i>
-        <h3>Tax Planning</h3>
+        <i class="fas fa-chart-bar"></i>
+        <h3>Criação de Dashboards</h3>
         <p>
-          We are specialists in this field with over 100 experiments. What it
-          means you will get the right solution, please find our service.
+          Desenvolvemos dashboards dinâmicos e responsivos, que oferecem
+          visualizações claras e objetivas, permitindo a tomada de decisões
+          rápidas e embasadas com informações precisas.
         </p>
       </div>
     </div>
@@ -52,18 +55,18 @@ export default {
 <style scoped>
 .separator {
   margin: 0 auto 30px;
-  width: 20rem;
+  width: 30%;
   border-top: 3px solid #24bacb;
 }
 .services {
   text-align: center;
-  min-height: calc(100vh - 51px);
+  min-height: calc(100vh - 60px);
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 5%;
+  padding: 5% 5%;
 }
 
 h2 {
@@ -106,37 +109,37 @@ h2 {
   color: #fff;
 }
 
-.financial-planning {
+.web-desing {
   background-color: #24bacb;
   color: #fff;
 }
 
-.financial-planning i {
+.web-desing i {
   font-size: 2rem;
   margin-bottom: 15px;
 }
 
-.insurance {
+.automacao {
   background-color: #ecf0f1;
   color: #3d7177;
 }
 
-.insurance i {
+.automacao i {
   font-size: 2rem;
   margin-bottom: 15px;
   color: #3d7177;
 }
 
-.insurance p {
+.automacao p {
   color: #3d7177;
 }
 
-.tax-planning {
+.dashboard {
   background-color: #24bacb;
   color: #fff;
 }
 
-.tax-planning i {
+.dashboard i {
   font-size: 2rem;
   margin-bottom: 15px;
 }
@@ -157,7 +160,6 @@ h2 {
   .service-card {
     width: 80%;
     margin-bottom: 20px;
-    height: 200px;
   }
 
   .service {

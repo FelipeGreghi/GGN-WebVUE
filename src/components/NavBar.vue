@@ -11,10 +11,13 @@
         <a @click="handleClick($event, 'home')">Home</a>
       </li>
       <li @click="closeMenu">
-        <a @click="handleClick($event, 'about')">About Us</a>
+        <a @click="handleClick($event, 'about')">Sobre Nós</a>
       </li>
       <li @click="closeMenu">
-        <a @click="handleClick($event, 'services')">Services</a>
+        <a @click="handleClick($event, 'services')">Serviços</a>
+      </li>
+      <li @click="closeMenu">
+        <a @click="handleClick($event, 'portfolio')">Portfolio</a>
       </li>
     </ul>
 

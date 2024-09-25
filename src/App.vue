@@ -5,6 +5,7 @@
       <HomeSection id="home" />
       <AboutSection id="about" />
       <ServicesSection id="services" />
+      <PortfolioSection id="portfolio" />
       <router-view />
     </div>
   </div>
@@ -14,6 +15,7 @@
 import AboutSection from "./components/AboutSection.vue";
 import HomeSection from "./components/HomeSection.vue";
 import ServicesSection from "./components/ServicesSection.vue";
+import PortfolioSection from "./components/PortfolioSection.vue";
 import NavBar from "./components/NavBar.vue";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -24,6 +26,7 @@ export default {
     HomeSection,
     AboutSection,
     ServicesSection,
+    PortfolioSection,
   },
   mounted() {
     AOS.init();
@@ -51,6 +54,6 @@ body {
   width: 100%;
 }
 .content {
-  padding-top: 79px;
+  padding-top: 60px;
 }
 </style>
