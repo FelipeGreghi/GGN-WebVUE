@@ -62,6 +62,7 @@ export default {
   flex-flow: column;
   padding-top: 5rem;
   padding-left: 10%;
+  padding-right: 10px;
   height: 50%;
 }
 
@@ -108,6 +109,7 @@ export default {
   font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
   font-size: 70px;
   line-height: 70px;
+  text-align: left;
 }
 
 .book-call {
@@ -131,6 +133,7 @@ export default {
 .email-message {
   margin-top: 20px;
   font-size: 1.1em;
+  text-align: left;
 }
 
 .email-link {
@@ -145,6 +148,25 @@ export default {
   margin-right: 10px;
   width: 20px;
   height: 20px;
+}
+
+@media (max-width: 620px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .left-section {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  .right-section {
+    width: 100%;
+    border-bottom: #fff 1px solid;
+    border-right: #fff 1px solid;
+    border-top-right-radius: 80px;
+    padding: 4rem 2rem;
+  }
 }
 </style>
   
