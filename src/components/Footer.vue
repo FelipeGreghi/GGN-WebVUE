@@ -23,17 +23,17 @@
     <div class="right-section">
       <p>VAMOS CONVERSAR</p>
       <h1>Tem uma Ideia?</h1>
-      <button class="book-call">
+      <a href="https://wa.me/5516997427047" target="_blank" class="book-call">
         <i class="fab fa-whatsapp" aria-hidden="true"></i>Fale com nosso
         especialista
-      </button>
+      </a>
       <p class="email-message">
         Se preferir, fique à vontade para nos enviar um e-mail. Estaremos
         prontos para ajudar!
       </p>
-      <a href="mailto:hello@rsacreativestudio.com" class="email-link">
+      <a href="mailto:ggntec.comercial@gmail.com" class="email-link">
         <i class="fas fa-envelope" aria-hidden="true"></i>
-        hello@teste.com
+        &nbsp;ggntec.comercial@gmail.com
       </a>
     </div>
   </div>
@@ -137,17 +137,12 @@ export default {
 }
 
 .email-link {
-  color: #ff6f61;
+  color: #24bacb;
   font-size: 1.2em;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-}
-
-.email-link img {
-  margin-right: 10px;
-  width: 20px;
-  height: 20px;
+  justify-content: flex-start;
+  text-decoration: none;
 }
 
 @media (max-width: 620px) {

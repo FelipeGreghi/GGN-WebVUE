@@ -1,11 +1,17 @@
 <template>
-  <div class="card" data-aos="zoom-in" data-aos-duration="1200">
+  <a
+    :href="link"
+    class="card"
+    target="_blank"
+    data-aos="zoom-in"
+    data-aos-duration="1200"
+  >
     <img :src="image" alt="plant image" class="card-image" />
     <div class="card-body">
       <h3 class="card-title">{{ title }}</h3>
       <p class="card-description">{{ description }}</p>
     </div>
-  </div>
+  </a>
 </template>
   
   <script>
@@ -24,6 +30,10 @@ export default {
       required: false,
       default: "",
     },
+    link: {
+      type: String,
+      required: true,
+    },
   },
 };
 </script>
@@ -40,9 +50,14 @@ export default {
   padding: 16px;
   margin-bottom: 40px;
   cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
 }
+
 .card:hover {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05) !important;
 }
 
 .card-image {
