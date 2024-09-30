@@ -37,14 +37,6 @@ export default {
             "Desenvolvimento de um portfólio web responsivo com Vue.js, projetado para exibir de forma interativa as habilidades de um desenvolvedor full stack, projetos completos com links para repositórios, além de facilitar o contato para oportunidades profissionais.",
           link: "https://felipegreghi.netlify.app/",
         },
-        {
-          title: "DashBoard Telefonia",
-          image: require("@/assets/portfolio/portfolioDashTelefoniaRWR.jpg"),
-          description:
-            "Desenvolvimento de uma aplicação web interativa usando Streamlit, focada em visualização e análise de dados de Redes de Recomendação, permitindo a criação de dashboards dinâmicos e relatórios automatizados para facilitar a interpretação dos resultados.",
-          link: "https://rwr-dashboard.streamlit.app/",
-        },
-        // Adicione mais projetos conforme necessário
       ],
     };
   },
