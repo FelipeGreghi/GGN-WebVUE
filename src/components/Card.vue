@@ -46,7 +46,7 @@ export default {
   overflow: hidden;
   text-align: center;
   height: 400px;
-  width: 300px;
+  width: 330px;
   padding: 16px;
   margin-bottom: 40px;
   cursor: pointer;

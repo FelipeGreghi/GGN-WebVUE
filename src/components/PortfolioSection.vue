@@ -31,11 +31,25 @@ export default {
     return {
       projects: [
         {
-          title: "Portfólio Web",
-          image: require("@/assets/portfolio/portfolioWebProgramador.jpg"),
+          title: "Dashboard de Vendas",
+          image: require("@/assets/portfolio/portifolioDashVendas.jpg"),
           description:
-            "Desenvolvimento de um portfólio web responsivo com Vue.js, projetado para exibir de forma interativa as habilidades de um desenvolvedor full stack, projetos completos com links para repositórios, além de facilitar o contato para oportunidades profissionais.",
-          link: "https://felipegreghi.netlify.app/",
+            "Criação de um painel para analisar indicadores como faturamento, margem bruta e quantidade vendida. Inclui comparações com metas, desempenho por produto e um ranking de vendedores, facilitando a visualização dos resultados e suporte para decisões estratégicas de vendas.",
+          link: "https://app.powerbi.com/view?r=eyJrIjoiMjE1MTNlNDgtYjdjOS00NDkwLWJmZWQtMjA1NTU5ODQwM2I2IiwidCI6ImUxYWFhM2NmLTI5MjItNDEyYy04MDE1LWRlZTEyZDg1MTJmYSJ9",
+        },
+        {
+          title: "Dashboard de Recursos Humanos",
+          image: require("@/assets/portfolio/portifolioDashRH.jpg"),
+          description:
+            "Criação de um dashboard interativo, focado em análises de contratações, demissões e indicadores de desempenho de uma empresa. As informações são apresentadas de maneira intuitiva, facilitando a tomada de decisões estratégicas e gestão eficiente de pessoas.",
+          link: "https://app.powerbi.com/view?r=eyJrIjoiZjJlNWIwMjktMzNkYi00YzNkLWI4NTgtNTEyZDQzZWUyMmY0IiwidCI6ImUxYWFhM2NmLTI5MjItNDEyYy04MDE1LWRlZTEyZDg1MTJmYSJ9",
+        },
+        {
+          title: "Dashboard Imobiliário",
+          image: require("@/assets/portfolio/portifolioDashImobiliaria.jpg"),
+          description:
+            "Painel para análise de vendas e locações de imóveis, com visualizações de faturamento, funil de negócios, origem dos leads e desempenho por vendedor. Facilita o acompanhamento de metas e a análise geográfica das vendas para suporte a decisões estratégicas.",
+          link: "https://app.powerbi.com/view?r=eyJrIjoiZGM3NzA2Y2UtZmU1My00NzljLTg1N2QtNmIwNDdiMGQ5NTJjIiwidCI6ImUxYWFhM2NmLTI5MjItNDEyYy04MDE1LWRlZTEyZDg1MTJmYSJ9",
         },
       ],
     };
