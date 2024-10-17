@@ -31,7 +31,7 @@
         Se preferir, fique à vontade para nos enviar um e-mail. Estaremos
         prontos para ajudar!
       </p>
-      <a href="mailto:ggntec.comercial@gmail.com" class="email-link">
+      <a href="mailto:comercial@ggnds.com.br" class="email-link">
         <i class="fas fa-envelope" aria-hidden="true"></i>
         &nbsp;comercial@ggnds.com.br
       </a>
