@@ -33,7 +33,7 @@
       </p>
       <a href="mailto:ggntec.comercial@gmail.com" class="email-link">
         <i class="fas fa-envelope" aria-hidden="true"></i>
-        &nbsp;ggntec.comercial@gmail.com
+        &nbsp;comercial@ggnds.com.br
       </a>
     </div>
   </div>
@@ -94,6 +94,10 @@ export default {
   font-size: 16px;
   font-weight: 300;
   text-align: left;
+}
+
+.social-icons {
+  display: none;
 }
 
 .social-icons a {
